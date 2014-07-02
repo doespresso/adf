@@ -71,6 +71,40 @@
   right: @padl;
 }
 
+@media(max-width:@screen-phone){
+  .line-top{
+    .fline();
+    width: 100%;
+    height: @wl;
+    padding: 0 @padl/2;
+    top: @padl/2;
+  }
+
+  .line-bottom{
+    .fline();
+    width: 100%;
+    height: @wl;
+    padding: 0 @padl/2;
+    bottom: @padl/2;
+  }
+
+  .line-left{
+    .fline();
+    width: @wl;
+    height: 100%;
+    padding: @padl/2 0;
+    left: @padl/2;
+  }
+
+  .line-right{
+    .fline();
+    width: @wl;
+    height: 100%;
+    padding: @padl/2 0;
+    right: @padl;
+  }
+}
+
 #fixed-wrapper{
   height:0;
 }
