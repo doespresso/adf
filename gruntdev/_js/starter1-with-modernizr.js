@@ -864,16 +864,16 @@ if (Modernizr.touch) {
 //    sl_progress = false;
 }
 
-yepnope({
-    test: Modernizr.touch,
-    yep: 'assets/js/app/fastclick.js',
-    callback: function (url, result, key) {
-        FastClick.attach(document.body);
-        console.log("load fastclick 1");
-    },
-    complete: function () {
-    }
-});
+//yepnope({
+//    test: Modernizr.touch,
+//    yep: 'assets/js/app/fastclick.js',
+//    callback: function (url, result, key) {
+//        FastClick.attach(document.body);
+//        console.log("load fastclick 1");
+//    },
+//    complete: function () {
+//    }
+//});
 
 window.onload = function () {
     console.log('wl');
