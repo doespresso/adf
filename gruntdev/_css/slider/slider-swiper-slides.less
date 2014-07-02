@@ -1,0 +1,131 @@
+@swiper-height: 100%;
+@dot-size: 8px;
+@radius: 100%;
+
+
+
+
+
+
+
+#presentation {
+  .user-select(none);
+  .swiper-pagination {
+    @pcolor:#111;
+    text-align: center;
+    position: absolute;
+    left:0px;
+    bottom:@gap;
+    width:100%;
+    z-index:10;
+
+    .swiper-pagination-switch {
+      display: inline-block;
+      width: @dot-size;
+      height: @dot-size;
+      margin: @dot-size;
+//      background-color: #fff;
+      border:1px solid;
+      border-color:@pcolor;
+      border-radius: @radius;
+      .opacity(0.4);
+    }
+
+    .swiper-visible-switch {
+      .opacity(0.4);
+    }
+
+    .swiper-active-switch {
+//      background-color:#000;
+      border:@dot-size/2 solid;
+      border-color:@pcolor;
+      .opacity(1);
+      .transition(0.9s);
+    }
+  }
+  .loading{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index:20;
+    display:block;
+    background-color:rgba(0,0,0,0.7);
+    &.hide{display:none}
+  }
+  .swiper-container {
+    width: 100%; //    height: @swiper-height;
+    height: 100%;
+//    background-color:red;
+//    z-index:1;
+  }
+  .swiper-wrapper{
+    height:100%;
+//    background-color:red;
+  }
+
+  .swiper-slide, .slide-wrapper{
+    #bg-cover(@align:center center;);
+  }
+
+  .swiper-slide {
+//    background-color:red;
+    width:100%;
+    padding:0 @gap/2;
+    position: relative;
+//    .grayscale;
+    .slide-wrapper{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height:100%;
+      .grayscale;
+      @media (min-width:@screen-md){
+        margin-left:@gap*7;
+      }
+      .transition(background 4s);
+    }
+    img{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      height:100%;
+      .opacity(0);
+      display:none;
+    }
+    &.swiper-slide-active{
+      .slide-wrapper{
+        .colored;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+.gallery{
+  .swiper-container {
+//    padding:0 @gap*3;
+    display: inline-block;
+    max-width:100%;
+    height: 60px;
+    .swiper-wrapper {
+      .swiper-slide {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
