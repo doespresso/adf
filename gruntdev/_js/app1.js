@@ -1,11 +1,11 @@
-var sliding_speed = 2500,
+var sliding_speed = 2000,
     sl_progress = true,
     reinittimeout;
 
 //yepnope.injectCss(['dev/component/odometer/themes/odometer-theme-minimal.css']);
 
 if (Modernizr.touch) {
-//    sliding_speed = 500;
+    sliding_speed = 500;
 //    sl_progress = false;
 }
 
@@ -183,7 +183,7 @@ yepnope([
 //                    freeMode:true,
                     centeredSlides:true,
                     initialSlide:0,
-                    speed: 2500,
+                    speed: sliding_speed,
                     autoplay: 5000,
                     autoplayDisableOnInteraction: true,
 
