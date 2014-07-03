@@ -189,7 +189,7 @@ yepnope([
                     speed: sliding_speed,
                     autoplay: 5000,
                     autoplayDisableOnInteraction: true,
-                    shortSwipes:short,
+                    shortSwipes:true,
                     offsetPxBefore:380,
 
 //                    offsetSlidesBefore:1,
