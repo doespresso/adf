@@ -9,7 +9,7 @@
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.9);
   z-index:100;
 }
 
@@ -19,8 +19,8 @@
   width: @padl*5;
   height: @padl*5;
   position: absolute;
-  right: -@padl/2 - 6px;
-  top: -@padl/2 - 6px;
+  right: @padl/2;
+  top: @padl/2;
   overflow: hidden;
   border: none;
   text-indent: 200%;
@@ -52,11 +52,11 @@
   top: @padl*4;
 //  -webkit-transform: translateY(-50%);
 //  transform: translateY(-50%);
-  -webkit-transform: skew(0deg, -15deg);
-  -moz-transform: skew(0deg, -15deg);
-  -o-transform: skew(0deg, -15deg);
-  -ms-transform: skew(0deg, -15deg);
-  transform: skew(0deg, -15deg);
+//  -webkit-transform: skew(0deg, -15deg);
+//  -moz-transform: skew(0deg, -15deg);
+//  -o-transform: skew(0deg, -15deg);
+//  -ms-transform: skew(0deg, -15deg);
+//  transform: skew(0deg, -15deg);
 }
 
 .overlay ul {
@@ -84,7 +84,7 @@
   display: block;
   border-bottom:1px #fff solid;
   width:100%;
-  padding:@padl/2 @padl;
+  padding:@padl/2 15%;
   color: #fff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;

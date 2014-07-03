@@ -1,6 +1,6 @@
 @swiper-height: 100%;
-@dot-size: 8px;
-@radius: 100%;
+@dot-size: 7px;
+@radius: 0;
 
 
 
@@ -24,22 +24,23 @@
       width: @dot-size;
       height: @dot-size;
       margin: @dot-size;
-//      background-color: #fff;
-      border:1px solid;
-      border-color:@pcolor;
-      border-radius: @radius;
-      .opacity(0.4);
+      background-color: #fff;
+//      border:1px solid;
+//      border-color:@pcolor;
+//      border-radius: @radius;
+//      .opacity(0.4);
+//      border-color:#fff;
     }
 
     .swiper-visible-switch {
-      .opacity(0.4);
+//      .opacity(0.4);
     }
 
     .swiper-active-switch {
-//      background-color:#000;
-      border:@dot-size/2 solid;
-      border-color:@pcolor;
-      .opacity(1);
+      background-color:#000;
+//      border:@dot-size/2 solid;
+//      border-color:@pcolor;
+//      .opacity(1);
       .transition(0.9s);
     }
   }

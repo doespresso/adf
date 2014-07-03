@@ -855,12 +855,15 @@ Modernizr.load=function(){yepnope.apply(window,[].slice.call(arguments,0));};
 ;
 var sliding_speed = 2000,
     sl_progress = true,
+    short = false,
     reinittimeout;
 
 //yepnope.injectCss(['dev/component/odometer/themes/odometer-theme-minimal.css']);
 
 if (Modernizr.touch) {
     sliding_speed = 500;
+    short = true;
+    console.log("short");
 //    sl_progress = false;
 }
 
@@ -1041,7 +1044,7 @@ yepnope([
                     speed: sliding_speed,
                     autoplay: 5000,
                     autoplayDisableOnInteraction: true,
-
+                    shortSwipes:short,
                     offsetPxBefore:380,
 
 //                    offsetSlidesBefore:1,
