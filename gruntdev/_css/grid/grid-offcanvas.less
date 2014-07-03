@@ -49,7 +49,7 @@
 .overlay nav {
   text-align: left;
   position: relative;
-  top: @padl*4;
+  top: @padl*5;
 //  -webkit-transform: translateY(-50%);
 //  transform: translateY(-50%);
 //  -webkit-transform: skew(0deg, -15deg);
@@ -79,14 +79,15 @@
 
 .overlay ul li a {
   font-size: 18px;
-  font-size: 6vh;
+  font-size: 5vh;
+  line-height:1;
   font-weight:bold;
   letter-spacing:2px;
   display: block;
-  border-bottom:1px #fff solid;
+//  border-bottom:1px #fff solid;
   width:100%;
-  padding:@padl/2 @padl;
-  padding:1vh @padl;
+  padding:@padl/2 0;
+  padding:1.5vh 0;
   color: #fff;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
@@ -116,12 +117,3 @@
   transition: opacity 0.5s, transform 0.5s;
 }
 
-@media screen and (max-height: 30.5em) {
-  .overlay nav {
-    height: 70%;
-    font-size: 34px;
-  }
-  .overlay ul li {
-    min-height: 34px;
-  }
-}
