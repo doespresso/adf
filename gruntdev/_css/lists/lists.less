@@ -19,6 +19,7 @@
     width: 100%;
     height: @h*1.5;
     position: relative;
+    background:transparent;
     .photo {
       position: absolute;
       display: block;
@@ -58,6 +59,8 @@
       line-height: 1.5;
       font-size: 18px;
       padding: 0 @padl*2;
+      position:relative;
+
       @media (min-width: @screen-sm) {
         font-size: 16px;
         padding: 0;
@@ -67,6 +70,28 @@
       }
       @media (min-width: @screen-lg) {
         font-size: 14px;
+      }
+      a{
+//        padding-left:16px;
+        position:relative;
+        display:block;
+        line-height:1.8;
+        span{
+          border-bottom:1px @gray-lighter solid;
+          padding-bottom:3px;
+        }
+//        &:before{
+//          content:'-';
+//          position:absolute;
+//
+//          left:0px;
+//          top:0px;
+//        }
+        &:hover{
+          span{
+            border-color:@gray-darker;
+          }
+        }
       }
     }
   }

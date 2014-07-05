@@ -197,7 +197,7 @@
 #menu{
   position:fixed;
   z-index:4;
-  top:50%;
+  top:51%;
   bottom:50%;
   display:inline-block;
   &:hover{
@@ -220,6 +220,17 @@
 }
 
 
+.bigtopmargin{
+  @media(min-width:@screen-md){
+    padding-top:10vh;
+  }
+}
+.bigbottommargin{
+  @media(min-width:@screen-md){
+    padding-bottom:10vh;
+  }
+}
+
 .spotlight{
   width:100%;
   height:640px;
@@ -227,7 +238,7 @@
 //  background-color:@gray-lighter;
   margin-bottom:@gap*2;
   @media(max-width:@screen-phone){
-    height:280px;
+    height:300px;
   }
 }
 
@@ -238,3 +249,13 @@
   }
 }
 
+
+address{
+  font-size:11px;
+  font-family:ProximaNova,Arial;
+  line-height:1.7;
+  padding:@padl*2;
+  @media(min-width:@screen-md){
+    padding:0;
+  }
+}
