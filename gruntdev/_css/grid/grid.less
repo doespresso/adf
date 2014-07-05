@@ -266,12 +266,17 @@ address{
   display:block;
   width:300px;
   height:300px;
-  border:@padl #f8f8f8 solid;
-  border-radius:100%;
+  border:@padl @gray-darker solid;
+//  border-radius:100%;
   margin:0 auto;
   @media(min-width:@screen-md){
     margin:0;
   }
+  -webkit-animation: pace-spinner 3400ms linear infinite;
+  -moz-animation: pace-spinner 3400ms linear infinite;
+  -ms-animation: pace-spinner 3400ms linear infinite;
+  -o-animation: pace-spinner 3400ms linear infinite;
+  animation: pace-spinner 3400ms linear infinite;
 }
 
 
